@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="refresh" content="60;https://url-shortener-microservice-jordan141.c9users.io" />
+        <title>URL Shortener Microservice</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+    </head>
+    <body class="container text-center">
+    <figure>
+        <img src="https://avatars3.githubusercontent.com/u/15958401?s=460&v=4" width="229" height="230">
+        <figcaption>Developed by: <a href="https://github.com/Jordan141" target="_blank">Jordan Moss</a></figcaption>
+        <a href=""><i class="fa fa-codepen"></i></a>
+        <a href=""><i class="fa fa-twitter"></i></a>
+        <a href=""><i class="fa fa-github"></i></a>
+        <a href=""><i class="fa fa-linkedin"></i></a>
+    </figure>
+    <h2>URL Shortener Microservice</h2>
+    <form action="/" method="POST">
+        <div class="form-group">
+        <input class="form-control" name="desiredURL" type="text" placeholder="URL..." autocomplete="off" required/>
+        </div>
+        <%if(error){ %>
+            <h6 class="errorMessage">Error: <%= error %></h6>
+        <% } %>
+        <%if(link){ %>
+            <h6 class="linkMessage">Your link is - <%= link %></h6>
+        <% } %>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+    

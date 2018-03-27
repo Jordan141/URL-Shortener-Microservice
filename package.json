@@ -1,0 +1,26 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "URL Shortening Microservice, utilizing FireBase as Storage",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jordan141/URL-Shortener-Microservice.git"
+  },
+  "author": "Jordan Moss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jordan141/URL-Shortener-Microservice/issues"
+  },
+  "homepage": "https://github.com/Jordan141/URL-Shortener-Microservice#readme"
+}
