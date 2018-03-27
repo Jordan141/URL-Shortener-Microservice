@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const validUrl = require('valid-url')
+const {isUri} = require('valid-url')
 const ejs = require('ejs')
 const path = require('path')
 const _ = require('lodash')
@@ -44,7 +44,7 @@ app.get('/links/:id', (req, res) => {
 app.post('/', (req, res) => {
     const baseLink = `https://${req.headers.host}/links/`
     const url = req.body.desiredURL
-    const respData = validUrl.isUri(url) ? generateUri(baseLink, url) : {"error": INVALID_URI} 
+    const respData = isUri(url) ? generateUri(baseLink, url) : {"error": INVALID_URI} 
     res.render('home', respData)
     
 })
